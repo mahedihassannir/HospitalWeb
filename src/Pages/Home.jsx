@@ -5,6 +5,7 @@ import About from '../Components/About';
 import Card from '../Components/Card';
 import ReviewSection from '../Components/ReviewSection';
 import OurDoctors from '../Components/OurDoctors';
+import From from '../Components/From';
 
 
 const Home = () => {
@@ -52,10 +53,19 @@ const Home = () => {
             {/* ends */}
 
             {/* here is the our experts doctors */}
-            <section>
+            <section className='mt-20'>
                 <OurDoctors></OurDoctors>
             </section>
             {/* here is the our experts doctors  ends*/}
+
+
+
+            {/* here is the form section */}
+            <section>
+                <From></From>
+            </section>
+            {/* here is the form section ends */}
+
 
 
 
