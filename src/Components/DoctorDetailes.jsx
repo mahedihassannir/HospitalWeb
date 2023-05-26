@@ -7,7 +7,7 @@ const DoctorDetailes = () => {
 
     return (
         <div>
-            <img src={data.git img} alt="" />
+            <img src={data.img} alt="" />
             <h1>{data.name}</h1>
         </div>
     );
