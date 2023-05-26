@@ -3,11 +3,13 @@ import DoctorTop from "./DoctorTop";
 import SingleDoctore from "./SingleDoctore";
 
 
+
 const OurDoctors = () => {
 
-    const url = `Doctors.json`
 
     const [data, SetData] = useState([])
+
+    const url = `http://localhost:5000/font`
 
     useEffect(() => {
 
@@ -19,17 +21,20 @@ const OurDoctors = () => {
 
 
 
+
     return (
         <div>
             <DoctorTop></DoctorTop>
             {/* doctor brandin */}
 
             {/* here is the doctors card */}
-            <section>
+            <section className="grid  gap-5 lg:grid-cols-3 ">
                 {
-                    data.map(res => {
-                        console.log(res);
-                    })
+                    data.map(res => (
+                        <SingleDoctore key={res._id}
+                            Single={res}
+                        ></SingleDoctore>
+                    ))
                 }
             </section>
 

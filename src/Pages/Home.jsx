@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div>
             {/* here is teh banner of the home  */}
-            <section id="bannerImg" className=" px-10 -mt-20 lg:flex  items-center  w-full h-screen">
+            <section id="bannerImg" className=" px-10 -mt-20 flex-col-reverse lg:flex-row flex  items-center  w-full h-screen">
 
 
                 <div className='md:w-1/2 text-white'>
@@ -27,7 +27,7 @@ const Home = () => {
                 <div className='md:w-1/2'>
 
 
-                    <img data-aos="zoom-in-down" src={docs} alt="" />
+                    <img className='' data-aos="zoom-in-down" src={docs} alt="" />
 
 
                 </div>
@@ -53,7 +53,7 @@ const Home = () => {
             {/* ends */}
 
             {/* here is the our experts doctors */}
-            <section className='mt-20'>
+            <section className='my-20'>
                 <OurDoctors></OurDoctors>
             </section>
             {/* here is the our experts doctors  ends*/}
@@ -61,7 +61,7 @@ const Home = () => {
 
 
             {/* here is the form section */}
-            <section>
+            <section className='mt-10'>
                 <From></From>
             </section>
             {/* here is the form section ends */}
