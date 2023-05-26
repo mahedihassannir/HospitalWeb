@@ -3,6 +3,8 @@ import '../css/banner.css'
 import docs from '../assets/docresurces/docs.png'
 import About from '../Components/About';
 import Card from '../Components/Card';
+import ReviewSection from '../Components/ReviewSection';
+import OurDoctors from '../Components/OurDoctors';
 
 
 const Home = () => {
@@ -24,7 +26,7 @@ const Home = () => {
                 <div className='md:w-1/2'>
 
 
-                    <img   data-aos="zoom-in-down" src={docs} alt="" />
+                    <img data-aos="zoom-in-down" src={docs} alt="" />
 
 
                 </div>
@@ -42,6 +44,18 @@ const Home = () => {
             <section>
                 <Card></Card>
             </section>
+            {/* here is the review section */}
+
+            <section>
+                <ReviewSection></ReviewSection>
+            </section>
+            {/* ends */}
+
+            {/* here is the our experts doctors */}
+            <section>
+                <OurDoctors></OurDoctors>
+            </section>
+            {/* here is the our experts doctors  ends*/}
 
 
 
