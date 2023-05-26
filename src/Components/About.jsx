@@ -5,15 +5,15 @@ import teeth from '../assets/docresurces/teeth.png'
 
 const About = () => {
     return (
-        <div className=" px-20 my-10 w-full  flex justify-center">
+        <div className=" px-20 my-10 w-full  lg:flex justify-center">
             <div className="w-1/2">
-                <img src={girl} alt="" />
+                <img  src={girl} alt="" data-aos="fade-right" />
             </div>
             <div className="w-1/2">
                 {/* this is service section */}
                 <div>
                     <h1 className='text-5xl font-bold'>Our Services</h1>
-                    <p className='w-2/3 py-4'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p className='md:w-2/3 py-4'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                 </div>
 
                 {/* here is the  teeth section */}
